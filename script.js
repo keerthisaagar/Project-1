@@ -38,12 +38,12 @@ let getpokemon = async  id => {
     let res1 = await res.json()
     console.log(res1)
    row.innerHTML += `<div class = "col-lg-4 col-sm-12">
-   <div class = "card border-success mb-3" style = "max-width: 20rem; margin: 30px;">
+   <div class = "card border-success mb-3" style = "max-width: 20rem; margin: 70px 30px;">
     <div class = "card-header text-dark" id = "pokemonName" style = "text-align: center; font-size: 20px;">
     <b>Name: ${res1.species.name}</b>
    </div>
     <div class = "card-body text-dark" style = "text-align: center;">
-    <img src = "${res1.sprites.back_default}" style = "width: 150px">
+    <img src = "${res1.sprites.back_default}" style = "width: 200px">
       <h5 class = "card-title"> </h5>
       <h5 class = "card-title"> Weight: ${res1.weight}</h5>
       <h5 class = "card-title"> Ability: ${res1.abilities[0].ability.name}</h5>
