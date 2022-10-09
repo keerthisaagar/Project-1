@@ -13,7 +13,7 @@ title.setAttribute("href","#");
 title.style.marginLeft="45%"
 title.innerHTML="Pokemon"
 
-var row = document.createElement("div");
+let row = document.createElement("div");
 row.classList.add("row", "m-3");
 
 let pagination = document.createElement("div")
